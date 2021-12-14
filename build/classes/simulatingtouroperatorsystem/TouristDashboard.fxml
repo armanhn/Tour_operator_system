@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="609.0" prefWidth="892.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simulatingtouroperatorsystem.TouristDashboardController">
+   <children>
+      <Label layoutX="98.0" layoutY="94.0" text="Tourist Dashboard">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+      <Button layoutX="651.0" layoutY="97.0" mnemonicParsing="false" onAction="#logoutButtonOnClick" prefHeight="26.0" prefWidth="88.0" text="Logout" />
+      <VBox layoutX="98.0" layoutY="165.0" prefHeight="200.0" prefWidth="100.0" spacing="25.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#queriesButtonOnClick" prefHeight="26.0" prefWidth="120.0" text="Create Queries" />
+            <Button mnemonicParsing="false" onAction="#bookingButtonOnClick" prefHeight="26.0" prefWidth="120.0" text="Book Ticket" />
+            <Button mnemonicParsing="false" onAction="#hireguideButtonOnClick" prefHeight="26.0" prefWidth="120.0" text="Hire Guide" />
+            <Button mnemonicParsing="false" onAction="#packagesButtonOnClick" prefHeight="26.0" prefWidth="120.0" text="Tour Packages" />
+            <Button mnemonicParsing="false" onAction="#feedbackButtonOnClick" prefHeight="26.0" prefWidth="120.0" text="Feedback" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

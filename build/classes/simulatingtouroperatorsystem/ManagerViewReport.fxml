@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="697.0" prefWidth="1030.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simulatingtouroperatorsystem.ManagerViewReportController">
+   <children>
+      <Label layoutX="515.0" layoutY="80.0" text="Report">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <BarChart fx:id="chart" layoutX="14.0" layoutY="115.0" prefHeight="350.0" prefWidth="569.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Button layoutX="439.0" layoutY="506.0" mnemonicParsing="false" onAction="#load" prefHeight="26.0" prefWidth="153.0" text=" Load Chart" />
+      <Button layoutX="814.0" layoutY="597.0" mnemonicParsing="false" onAction="#backButtonOnClick" prefHeight="26.0" prefWidth="80.0" text="Back" />
+      <PieChart fx:id="chart1" layoutX="590.0" layoutY="105.0" prefHeight="328.0" prefWidth="399.0" />
+   </children>
+</AnchorPane>

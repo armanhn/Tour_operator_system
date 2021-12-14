@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="562.0" prefWidth="852.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simulatingtouroperatorsystem.TouristBookTicketSceneController">
+   <children>
+      <Label layoutX="340.0" layoutY="46.0" text="Book Ticket">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <RadioButton fx:id="visa" layoutX="301.0" layoutY="313.0" mnemonicParsing="false" text="Visa" />
+      <RadioButton fx:id="master" layoutX="366.0" layoutY="313.0" mnemonicParsing="false" text="Master" />
+      <RadioButton fx:id="bkash" layoutX="437.0" layoutY="313.0" mnemonicParsing="false" text="Bkash" />
+      <Label layoutX="235.0" layoutY="313.0" text="Payment:" />
+      <Button layoutX="316.0" layoutY="392.0" mnemonicParsing="false" onAction="#submit" prefHeight="25.0" prefWidth="100.0" text="Submit" />
+      <Button layoutX="616.0" layoutY="429.0" mnemonicParsing="false" onAction="#prev" prefHeight="25.0" prefWidth="61.0" text="Back" />
+      <HBox layoutX="185.0" layoutY="119.0" prefHeight="180.0" prefWidth="451.0">
+         <children>
+            <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="100.0" spacing="35.0">
+               <children>
+                  <Label text="Destination:" />
+                  <Label text="Date:" />
+                  <Label text="Passport Number:" />
+                  <Label text="Package ID:" />
+               </children>
+            </VBox>
+            <VBox alignment="TOP_RIGHT" prefHeight="180.0" prefWidth="188.0" spacing="25.0">
+               <children>
+                  <ComboBox fx:id="dest" prefHeight="25.0" prefWidth="205.0" />
+                  <TextField fx:id="date" />
+                  <TextField fx:id="passn" />
+                  <TextField fx:id="packid" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

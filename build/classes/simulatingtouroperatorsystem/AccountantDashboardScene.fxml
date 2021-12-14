@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="618.0" prefWidth="859.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simulatingtouroperatorsystem.AccountantDashboardSceneController">
+   <children>
+      <Button layoutX="693.0" layoutY="97.0" mnemonicParsing="false" onAction="#logoutButtonOnClick" text="Log Out" />
+      <Label layoutX="123.0" layoutY="94.0" text="Accountant Dashboard">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <VBox layoutX="123.0" layoutY="176.0" prefHeight="200.0" prefWidth="130.0" spacing="25.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#adviseBudgetButtonOnClick" prefHeight="25.0" prefWidth="127.0" text="Adise Budget Plan" />
+            <Button mnemonicParsing="false" onAction="#viewSellHistoryButtonOnClick" prefHeight="25.0" prefWidth="127.0" text="View Sell History" />
+            <Button mnemonicParsing="false" onAction="#generateGraphsButtonOnClick" prefHeight="25.0" prefWidth="127.0" text="Generate Graphs" />
+            <Button mnemonicParsing="false" onAction="#updatePayRollButtonOnClick" prefHeight="25.0" prefWidth="127.0" text="Monitor Salary" />
+            <Button mnemonicParsing="false" onAction="#viewRefundQueries" text="View Refund Queries" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

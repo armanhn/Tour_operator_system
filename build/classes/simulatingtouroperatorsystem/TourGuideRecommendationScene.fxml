@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="633.0" prefWidth="874.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simulatingtouroperatorsystem.TourGuideRecommendationSceneController">
+   <children>
+      <TextArea fx:id="recommendationTxt" layoutX="127.0" layoutY="170.0" prefHeight="294.0" prefWidth="558.0" />
+      <Label layoutX="127.0" layoutY="129.0" text="Guide's Recommendation">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="127.0" layoutY="475.0" mnemonicParsing="false" onAction="#postButtonOnClick" prefHeight="25.0" prefWidth="82.0" text="Post" />
+      <Button layoutX="633.0" layoutY="524.0" mnemonicParsing="false" onAction="#backButtonOnClick" prefHeight="25.0" prefWidth="60.0" text="Back" />
+   </children>
+</AnchorPane>

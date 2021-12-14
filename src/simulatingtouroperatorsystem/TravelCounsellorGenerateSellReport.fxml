@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="605.0" prefWidth="923.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simulatingtouroperatorsystem.TravelCounsellorGenerateSellReportController">
+   <children>
+      <Label layoutX="93.0" layoutY="64.0" text="Generate Sell Report">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="736.0" layoutY="534.0" mnemonicParsing="false" onAction="#backButtonOnClick" prefHeight="25.0" prefWidth="79.0" text="Back" />
+      <BarChart fx:id="chart" layoutX="193.0" layoutY="111.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Button layoutX="436.0" layoutY="521.0" mnemonicParsing="false" onAction="#generate" text="Generate" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="629.0" prefWidth="898.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="simulatingtouroperatorsystem.TourGuidePostBlogSceneController">
+   <children>
+      <Label layoutX="127.0" layoutY="169.0" text="Name:" />
+      <TextField fx:id="nameTxt" layoutX="172.0" layoutY="165.0" />
+      <Label layoutX="132.0" layoutY="98.0" text="Post Blog">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="topicTxt" layoutX="173.0" layoutY="204.0" />
+      <Label layoutX="127.0" layoutY="208.0" text="Topic:" />
+      <RadioButton fx:id="experienceBlogRB" layoutX="127.0" layoutY="250.0" mnemonicParsing="false" text="Travel Experience Blog" />
+      <RadioButton fx:id="informationBlogRB" layoutX="338.0" layoutY="251.0" mnemonicParsing="false" text="Travel Information Blog" />
+      <TextArea fx:id="blogBodyTxt" layoutX="126.0" layoutY="279.0" prefHeight="217.0" prefWidth="596.0" />
+      <Button layoutX="127.0" layoutY="507.0" mnemonicParsing="false" onAction="#postButtonOnClick" prefHeight="25.0" prefWidth="65.0" text="Post" />
+      <Button layoutX="648.0" layoutY="539.0" mnemonicParsing="false" onAction="#backButtonOnClick" prefHeight="25.0" prefWidth="74.0" text="Back" />
+   </children>
+</AnchorPane>

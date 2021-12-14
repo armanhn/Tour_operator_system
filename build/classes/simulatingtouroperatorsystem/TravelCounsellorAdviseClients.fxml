@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="609.0" prefWidth="958.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simulatingtouroperatorsystem.TravelCounsellorAdviseClientsController">
+   <children>
+      <Label layoutX="119.0" layoutY="102.0" text="Advise Clients about Tour Plans">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="clientTxtfield" layoutX="221.0" layoutY="155.0" prefHeight="25.0" prefWidth="190.0" />
+      <Label layoutX="119.0" layoutY="159.0" text="Client ID:" />
+      <TextField fx:id="destinationTxtfield" layoutX="221.0" layoutY="198.0" prefHeight="26.0" prefWidth="190.0" />
+      <Label layoutX="121.0" layoutY="202.0" text="Destination:" />
+      <Label layoutX="121.0" layoutY="253.0" text="Duration:" />
+      <TextField fx:id="durationTxtfield" layoutX="221.0" layoutY="248.0" prefHeight="26.0" prefWidth="190.0" promptText="In Days" />
+      <TextField fx:id="priceTxtfield" layoutX="221.0" layoutY="306.0" prefHeight="26.0" prefWidth="190.0" promptText="In Days" />
+      <Label layoutX="121.0" layoutY="310.0" text="Price:" />
+      <TextArea fx:id="adviseTxt" layoutX="121.0" layoutY="355.0" prefHeight="98.0" prefWidth="302.0" promptText="Advise Pros and Cons" />
+      <Button layoutX="245.0" layoutY="467.0" mnemonicParsing="false" onAction="#submitButtonOnClick" text="Submit" />
+      <Button layoutX="698.0" layoutY="516.0" mnemonicParsing="false" onAction="#backButtonOnClick" prefHeight="25.0" prefWidth="74.0" text="Back" />
+      <TextArea fx:id="hoteltext" layoutX="483.0" layoutY="126.0" prefHeight="334.0" prefWidth="429.0" />
+   </children>
+</AnchorPane>
